@@ -155,13 +155,14 @@ header nav ul a li:hover{
 #movie_text_box {
     width: 800px;
     height: 300px;
-    margin-top: 250px;
+    margin-top: 215px;
 }
 
 /* 영화 소개글 */
 #movie_text {
     width: 800px;
-    height: 250px;
+    height: 180px;
+    margin-bottom: 30px;
 }
 /* 영화 제목 */
 #movie_text h1 {
@@ -196,5 +197,46 @@ header nav ul a li:hover{
 
 #movie_link {
     width: 800px;
-    background-color: khaki;
+    display: flex;
+    margin-left: 10px;
+}
+
+#play_button {
+    width: 235px;
+    height: 42px;
+    background-color: rgb(255, 194, 25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#play_button span {
+    color: #fff;
+}
+
+#trailer_button span {
+    color: #fff;
+}
+
+.link_icon {
+    font-size: 25px;
+    margin-right: -30px;
+}
+
+.link_text1 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#trailer_button {
+    width: 125px;
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    margin-left: 20px;
 }

@@ -721,71 +721,57 @@ header nav ul a li:hover{
 /* footer */
 footer {
     width: 100%;
-    height: 330px;
-    /* border: 1px solid #333; */
+    height: 235px;
     background-color: black;
 }
 
-footer > #footer_box {
+#footer_box {
     width: 100%;
-    height: 205px;
-    /* border: 1px solid #333; */
+    height: 320px;
     margin-top: 60px;
+}
+
+#footer_infor_box {
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#footer_infor_box ul {
+    color: #717171;
     display: flex;
-    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: wrap;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-footer > #footer_box > #footer_logo_ul_box {
-    width: 437px;
-    height: 98px;
-    margin-top: 31px;
-    /* border: 1px solid #333; */
-    margin-left: 15px;
-}
-
-/* footer 로고박스 */
-footer > #footer_box > #footer_logo_ul_box > .footer_logo_box {
-    width: 437px;
-    height: 98px;
-    /* border: 1px solid #333; */
-}
-
-footer > #footer_box > #footer_logo_ul_box > .footer_logo_box a img {
-    width: 160px;
-    height: 32px;
-    border: none;
-}
-
-/* footer ul 박스 */
-footer > #footer_box > #footer_logo_ul_box > .footer_ul_box {
-    width: 436px;
-    height: 26px;
-    /* border: 1px solid #333; */
-}
-
-footer > #footer_box > #footer_logo_ul_box > .footer_ul_box ul {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-}
-
-footer > #footer_box > #footer_logo_ul_box > .footer_ul_box ul li {
-    font-weight: 500;
-}
-
-footer > #footer_box > #footer_logo_ul_box > .footer_ul_box ul li:first-child {
+#footer_infor_box ul li {
+    float: left;
+    font-size: 14px;
+    margin-right: 35px;
     font-weight: bold;
+    width: 133px;
+    height: 50px;
 }
 
-/* footer 연관 회사 ul 박스 */
-
-#footer_box > #footer_relation_box {
-    width: 168px;
-    height: 98px;
-    /* border: 1px solid #333; */
-    margin-top: 31px;
-    margin-right: 15px;
+#footer_infor_box ul li:first-child {
+    font-size: 16px;
 }
+
+#footer_infor_box ul li:hover {
+    color: rgb(255, 194, 25);
+}
+
+#footer_infor_box span {
+    color: #717171;
+    line-height: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
 
 footer > #footer_middle {
     width: 100%;
