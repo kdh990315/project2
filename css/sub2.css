@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'MinSans-Light';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+/* 헤더 시작 */
+header{
+    z-index: 400;
+    min-width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header:hover{
+    color: black;
+}
+
+#logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin: 20px;
+}
+
+#logo a img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    width: 700px;
+    height: 30px;
+    margin: 35px 30px;
+    float: left;
+}
+
+header nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul a li{
+    float: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: "MinSans-Light";
+    padding-bottom: 10px;
+}
+
+header nav ul a li:hover{
+    border-bottom: 4px solid gold;
+}
+
+#background_img_box {
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    margin-top: -250px;
+    top: 35%;
+}
+
+#background_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+#main_box {
+    width: 1200px;
+    height: 560px;
+    margin-top: 313px;
+    display: flex;
+    position: relative;
+    left: 10%;
+}
+
+#movie_box {
+    width: 380px;
+    height: 560px;
+    margin-left: 20px;
+}
+
+/* 영화 포스터 이미지 */
+#movie_img_box {
+    width: 350px;
+    height: 467px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#movie_img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+#movie_icon_box {
+    width: 350px;
+    height: 60px;
+    margin: 0 auto;
+}
+/* 영화 sns아이콘 글자 */
+#movie_icon_box_text {
+    width: 350px;
+    height: 23px;
+    margin-bottom: -3px;
+}
+
+#movie_icon_box_text span {
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+/* sns아이콘 */
+#movie_sns_icon {
+    width: 350px;
+    height: 37px;
+}
+
+#movie_sns_icon span {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 5px;
+}
+/* 영화 택스트 본문 */
+#movie_text_box {
+    width: 800px;
+    height: 300px;
+    margin-top: 250px;
+}
+
+/* 영화 소개글 */
+#movie_text {
+    width: 800px;
+    height: 250px;
+}
+/* 영화 제목 */
+#movie_text h1 {
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    font-size: 60px;
+}
+/* 영화 정보 */
+#movie_text ul {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#movie_text ul li {
+    color: #c1c1c1;
+    float: left;
+    font-size: 14px;
+    margin: 0 10px;
+    letter-spacing: 1px;
+}
+/* 영화 소개 */
+#movie_text p {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+#movie_link {
+    width: 800px;
+    background-color: khaki;
+}

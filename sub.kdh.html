@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="sub.kdh.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="css/sub.kdh.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/fadeIn.js"></script>
 </head>
 
 <body>
@@ -36,102 +38,59 @@
 
         <div class="slide_wrapper">
             <ul class="slides">
-                <li class="slide1"><a href="">
+                <li class="slide1">
+                   
                         <div class="slides_MM">5월</div>
                         <div class="slides_DD">1일~6일</div>
                         <div class="slides_color"></div>
-                    </a>
+                  
                 </li>
-                <li class="slide2"><a href="">
+                <li class="slide2">
                         <div class="slides_MM">5월</div>
                         <div class="slides_DD">7일~12일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li class="slide3"><a href="">
+                <li class="slide3">
                         <div class="slides_MM">5월</div>
                         <div class="slides_DD">13일~18일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide4">
                         <div class="slides_MM">5월</div>
                         <div class="slides_DD">19일~24일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide5">
                         <div class="slides_MM">5월</div>
                         <div class="slides_DD">25일~30일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide6">
                         <div class="slides_MM">6월</div>
                         <div class="slides_DD">1일~6일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide7">
                         <div class="slides_MM">6월</div>
                         <div class="slides_DD">7일~12일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide8">
                         <div class="slides_MM">6월</div>
                         <div class="slides_DD">13일~18일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide9">
                         <div class="slides_MM">6월</div>
                         <div class="slides_DD">19일~24일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
-                <li><a href="">
+                <li class="slide10">
                         <div class="slides_MM">6월</div>
                         <div class="slides_DD">25일~31일</div>
                         <div class="slides_color"></div>
-                    </a>
-
                 </li>
             </ul>
-
-            <script>
-                $(function() {
-                    $('.slide1').click(function() {
-                        $('#schedul_total_box1').fadeIn();
-                        $('#schedul_total_box2').hide();
-                        $('#schedul_total_box3').hide();
-                    });
-                });
-        
-                $(function() {
-                    $('.slide2').click(function() {
-                        $('#schedul_total_box1').hide();
-                        $('#schedul_total_box2').fadeIn();
-                        $('#schedul_total_box3').hide();
-                    });
-                });
-        
-                $(function() {
-                    $('.slide3').click(function() {
-                        $('#schedul_total_box1').hide();
-                        $('#schedul_total_box2').hide();
-                        $('#schedul_total_box3').fadeIn();
-                    });
-                });
-            </script>
 
         </div>
 
@@ -169,8 +128,6 @@
                 </a>
             </div>
 
-            <div id="schedule_live"></div>
-
 
             <div id="schedule_main_contents_box1">
                 <div class="schedule_main_contents_name1">
@@ -196,8 +153,17 @@
                             이에 허균은 기방의 취객들 사이에 걸쭉한 만담으로 인기를 끌던 하...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"><img src="img/play_icon.png" alt=""></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -225,8 +191,17 @@
                             대혼돈 속, 그는 예상치 못한 극한의 적과 맞서 싸워야만 하는데….
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -256,8 +231,17 @@
                             그의 뒤에 무자비한 악행을 벌이는 ‘강해상’(손석구)이 있음을 알...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -286,8 +270,17 @@
                             이 시간으로 사람들은 음식을 사고, 버스를 타고, 집세를 내는 등, 삶에 필요한 모...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -317,8 +310,17 @@
                             변호사 ‘강호창’(설경구)의 아들 ...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -345,8 +347,17 @@
                             , 문신으로 남긴 기록을 따라 범인을 쫓는 기억 추적 스릴러
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -373,9 +384,269 @@
                 </div>
             </div>
 
-            <div id="schedule_live"></div>
 
 
+            <div id="schedule_main_contents_box1">
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 7일</span>
+                </div>
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box7">
+                        <video src="video/video7.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">딜리셔스: 프렌치 레스토랑의 시작</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마</span>
+                            <span class="movie_infor"> | 프랑스</span>
+                            <span class="movie_infor"> | 112분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            18세기 프랑스, 열정 넘치는 요리사 망스롱은 새로 개발한 메뉴로 
+                            인해 자신이 모시던 샹포르 공작에게 해고된다. 시골 주막을 연 그의
+                             앞에 나타난 미스테리한 여인 루이즈.
+                             그녀와 함께 일하면서 잊었던 요리에 대한 열정이 되살아나고, 망스롱의 시골 주막은 맛집...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 8일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box8">
+                        <video src="video/video8.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">민스미트 작전</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마, 전쟁</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 127분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            사상 최대의 인명 피해를 낳은 제2차 세계대전, 연
+                            합군과 추축군은 전쟁을 승리로 이끌 교두보 시칠리
+                            아를 두고 팽팽한 대립을 펼친다. 하지만 추축군 독일의 위세가 상당해 시칠리아에는 이미 추축군 
+                            병력 무려 23만 명이 주둔해 있던 상황! 연합군은 해군 정보장교 ‘이...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 3일</span>
+                </div>
+
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box9">
+                        <video src="video/video9.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">쥬라기 월드: 도미니언</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">15세</span>
+                            <span class="movie_infor"> | 액션</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 147분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            공룡들의 터전이었던 이슬라 누블라 섬이 파괴된 후, 마침
+                            내 공룡들은 섬을 벗어나 세상 밖으로 출몰한다. 지상에 함께
+                             존재해선 안 될 위협적 생명체인 공룡의 등장으로 인류 역사상
+                              겪어보지 못한 사상 최악의 위기를 맞이한 
+                            인간들. 지구의 최상위 포식자 자리를 걸...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 4일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box10">
+                        <video src="video/video10.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">신비한 동물들과 덤블도어의 비밀</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 판타지</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 142분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            1930년대, 제2차 세계대전에 마법사들이 개입하게 되면서 강력한 어
+                            둠의 마법사 그린델왈드의 힘이 급속도로 커진다. 덤블도어는 뉴트
+                             스캐맨더에게 위대한 마법사 가문 후손, 마법학교의 유능한 교사,
+                             머글 등으로 이루어진 팀에게 임무를 맡긴다. 이에 뉴트와 친구...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 5일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box11">
+                        <video src="video/video11.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">공기살인</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마</span>
+                            <span class="movie_infor"> | 한국</span>
+                            <span class="movie_infor"> | 108분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            봄이 되면 나타났다 여름이 되면 사라지
+                            는 죽음의 병. 공기를 타고 대한민국에 죽음을 몰고 온 살인무기의 실체를 
+                            밝히기 위한 그들의 사투. 증발된 범인, 피해자는 증발되지 않았다!
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 6일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box12">
+                        <video src="video/video12.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">서울괴담</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">15세</span>
+                            <span class="movie_infor"> | 공포</span>
+                            <span class="movie_infor"> | 한국</span>
+                            <span class="movie_infor"> | 123분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            어두운 터널을 홀로 지날 때의 두
+                            려움 옆집에서 들려오는 의문의 소리
+                             중고 가구에 얽힌 미스터리 다른 사람
+                             을 향한 그릇된 질투 복수, 저주, 욕망
+                             에서 시작된 죽음보다 더한 공포의 실체가 찾아온다!
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 세 번째 박스 -->
+        <div id="schedul_total_box3">
+        
+            <!-- 장르 선택 박스 -->
+            <div id='movie_type_box'>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">movies</span></div>
+                </div>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">animation</span></div>
+                </div>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">child</span></div>
+                </div>
+            </div>
+        
+        
+        
             <div id="schedule_main_contents_box1">
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 1일</span>
@@ -384,9 +655,9 @@
                     <div class="schedule_main_img_box1">
                         <video src="video/video1.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
-                        <p class="movie_name">해, 왕이 된 남자</p>
+                        <p class="movie_name">광해, 왕이 된 남자</p>
                         <div id="movie_infor_box">
                             <span class="movie_infor">15세</span>
                             <span class="movie_infor"> | 드라마</span>
@@ -400,21 +671,32 @@
                             이에 허균은 기방의 취객들 사이에 걸쭉한 만담으로 인기를 끌던 하...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 1일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box2">
                         <video src="video/video2.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">닥터 스트레인지: 대혼돈의 멀티버스</p>
                         <div id="movie_infor_box">
@@ -429,22 +711,33 @@
                             대혼돈 속, 그는 예상치 못한 극한의 적과 맞서 싸워야만 하는데….
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 3일</span>
                 </div>
-
-
+        
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box3">
                         <video src="video/video3.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">범죄도시2</p>
                         <div id="movie_infor_box">
@@ -460,21 +753,32 @@
                             그의 뒤에 무자비한 악행을 벌이는 ‘강해상’(손석구)이 있음을 알...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 4일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box4">
                         <video src="video/video4.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">인 타임</p>
                         <div id="movie_infor_box">
@@ -490,21 +794,32 @@
                             이 시간으로 사람들은 음식을 사고, 버스를 타고, 집세를 내는 등, 삶에 필요한 모...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 5일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box5">
                         <video src="video/video5.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">니 부모 얼굴이 보고 싶다</p>
                         <div id="movie_infor_box">
@@ -521,21 +836,32 @@
                             변호사 ‘강호창’(설경구)의 아들 ...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 6일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box6">
                         <video src="video/video6.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">메멘토</p>
                         <div id="movie_infor_box">
@@ -549,18 +875,28 @@
                             , 문신으로 남긴 기록을 따라 범인을 쫓는 기억 추적 스릴러
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
             </div>
         </div>
-
-
-        <!-- 세 번째 박스 -->
-        <div id="schedul_total_box3">
+        
+        <!-- 네 번째 박스 -->
+        <div id="schedul_total_box4">
 
             <!-- 장르 선택 박스 -->
             <div id='movie_type_box'>
@@ -578,9 +914,268 @@
                 </div>
             </div>
 
-            <div id="schedule_live"></div>
 
 
+            <div id="schedule_main_contents_box1">
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 7일</span>
+                </div>
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box7">
+                        <video src="video/video7.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">딜리셔스: 프렌치 레스토랑의 시작</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마</span>
+                            <span class="movie_infor"> | 프랑스</span>
+                            <span class="movie_infor"> | 112분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            18세기 프랑스, 열정 넘치는 요리사 망스롱은 새로 개발한 메뉴로 
+                            인해 자신이 모시던 샹포르 공작에게 해고된다. 시골 주막을 연 그의
+                             앞에 나타난 미스테리한 여인 루이즈.
+                             그녀와 함께 일하면서 잊었던 요리에 대한 열정이 되살아나고, 망스롱의 시골 주막은 맛집...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 8일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box8">
+                        <video src="video/video8.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">민스미트 작전</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마, 전쟁</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 127분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            사상 최대의 인명 피해를 낳은 제2차 세계대전, 연
+                            합군과 추축군은 전쟁을 승리로 이끌 교두보 시칠리
+                            아를 두고 팽팽한 대립을 펼친다. 하지만 추축군 독일의 위세가 상당해 시칠리아에는 이미 추축군 
+                            병력 무려 23만 명이 주둔해 있던 상황! 연합군은 해군 정보장교 ‘이...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 3일</span>
+                </div>
+
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box9">
+                        <video src="video/video9.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">쥬라기 월드: 도미니언</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">15세</span>
+                            <span class="movie_infor"> | 액션</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 147분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            공룡들의 터전이었던 이슬라 누블라 섬이 파괴된 후, 마침
+                            내 공룡들은 섬을 벗어나 세상 밖으로 출몰한다. 지상에 함께
+                             존재해선 안 될 위협적 생명체인 공룡의 등장으로 인류 역사상
+                              겪어보지 못한 사상 최악의 위기를 맞이한 
+                            인간들. 지구의 최상위 포식자 자리를 걸...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 4일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box10">
+                        <video src="video/video10.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">신비한 동물들과 덤블도어의 비밀</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 판타지</span>
+                            <span class="movie_infor"> | 미국</span>
+                            <span class="movie_infor"> | 142분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            1930년대, 제2차 세계대전에 마법사들이 개입하게 되면서 강력한 어
+                            둠의 마법사 그린델왈드의 힘이 급속도로 커진다. 덤블도어는 뉴트
+                             스캐맨더에게 위대한 마법사 가문 후손, 마법학교의 유능한 교사,
+                             머글 등으로 이루어진 팀에게 임무를 맡긴다. 이에 뉴트와 친구...
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 5일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box11">
+                        <video src="video/video11.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">공기살인</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">12세</span>
+                            <span class="movie_infor"> | 드라마</span>
+                            <span class="movie_infor"> | 한국</span>
+                            <span class="movie_infor"> | 108분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            봄이 되면 나타났다 여름이 되면 사라지
+                            는 죽음의 병. 공기를 타고 대한민국에 죽음을 몰고 온 살인무기의 실체를 
+                            밝히기 위한 그들의 사투. 증발된 범인, 피해자는 증발되지 않았다!
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule_main_contents_name1">
+                    <span class="contents_open_day">5월 6일</span>
+                </div>
+
+                <div id="schedule_main_contents_box_parents">
+                    <div class="schedule_main_img_box12">
+                        <video src="video/video12.mp4" loop muted autoplay></video>
+                    </div>
+
+                    <div class="schedule_main_img_text">
+                        <p class="movie_name">서울괴담</p>
+                        <div id="movie_infor_box">
+                            <span class="movie_infor">15세</span>
+                            <span class="movie_infor"> | 공포</span>
+                            <span class="movie_infor"> | 한국</span>
+                            <span class="movie_infor"> | 123분</span>
+                        </div>
+                        <div id="movie_story_text_box">
+                            어두운 터널을 홀로 지날 때의 두
+                            려움 옆집에서 들려오는 의문의 소리
+                             중고 가구에 얽힌 미스터리 다른 사람
+                             을 향한 그릇된 질투 복수, 저주, 욕망
+                             에서 시작된 죽음보다 더한 공포의 실체가 찾아온다!
+                        </div>
+                        <div id="movie_icon_box">
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>PLAY</span></div>
+                                        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                        <span>MORE INFORMATION</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- 다섯 번째 박스 -->
+        <div id="schedul_total_box5">
+        
+            <!-- 장르 선택 박스 -->
+            <div id='movie_type_box'>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">movies</span></div>
+                </div>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">animation</span></div>
+                </div>
+                <div id="movie_type">
+                    <div class="movie_type1"><span class="movie_type_logo">Hit Movies</span></div>
+                    <div class="movie_type2"><span class="movie_type_name">child</span></div>
+                </div>
+            </div>
+        
+        
+        
             <div id="schedule_main_contents_box1">
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 1일</span>
@@ -589,9 +1184,9 @@
                     <div class="schedule_main_img_box1">
                         <video src="video/video1.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
-                        <p class="movie_name">, 왕이 된 남자</p>
+                        <p class="movie_name">광해, 왕이 된 남자</p>
                         <div id="movie_infor_box">
                             <span class="movie_infor">15세</span>
                             <span class="movie_infor"> | 드라마</span>
@@ -605,21 +1200,32 @@
                             이에 허균은 기방의 취객들 사이에 걸쭉한 만담으로 인기를 끌던 하...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 1일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box2">
                         <video src="video/video2.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">닥터 스트레인지: 대혼돈의 멀티버스</p>
                         <div id="movie_infor_box">
@@ -634,22 +1240,33 @@
                             대혼돈 속, 그는 예상치 못한 극한의 적과 맞서 싸워야만 하는데….
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 3일</span>
                 </div>
-
-
+        
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box3">
                         <video src="video/video3.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">범죄도시2</p>
                         <div id="movie_infor_box">
@@ -665,21 +1282,32 @@
                             그의 뒤에 무자비한 악행을 벌이는 ‘강해상’(손석구)이 있음을 알...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 4일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box4">
                         <video src="video/video4.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">인 타임</p>
                         <div id="movie_infor_box">
@@ -695,21 +1323,32 @@
                             이 시간으로 사람들은 음식을 사고, 버스를 타고, 집세를 내는 등, 삶에 필요한 모...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 5일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box5">
                         <video src="video/video5.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">니 부모 얼굴이 보고 싶다</p>
                         <div id="movie_infor_box">
@@ -726,21 +1365,32 @@
                             변호사 ‘강호창’(설경구)의 아들 ...
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="schedule_main_contents_name1">
                     <span class="contents_open_day">5월 6일</span>
                 </div>
-
+        
                 <div id="schedule_main_contents_box_parents">
                     <div class="schedule_main_img_box6">
                         <video src="video/video6.mp4" loop muted autoplay></video>
                     </div>
-
+        
                     <div class="schedule_main_img_text">
                         <p class="movie_name">메멘토</p>
                         <div id="movie_infor_box">
@@ -754,15 +1404,27 @@
                             , 문신으로 남긴 기록을 따라 범인을 쫓는 기억 추적 스릴러
                         </div>
                         <div id="movie_icon_box">
-                            <button class="play_icon"></button>
-                            <button class="more_info_icon"></button>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box"><i class="fa-solid fa-play"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>PLAY</span>
+                                </div>
+        
+                            </a>
+                            <a class="play_icon" href="#">
+                                <div class="play_icon_box2"><i class="fa-regular fa-circle-question"
+                                        style="font-size: 20px; color: rgb(255, 255, 255); margin-left: 5px"></i>
+                                    <span>MORE INFORMATION</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+        
             </div>
         </div>
     </div>
+
     <!-- footer 시작 -->
     <footer>
         <div id="footer_box">
