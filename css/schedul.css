@@ -98,7 +98,6 @@ header nav ul a li:hover{
     text-align: center;
     color: #fff;
     letter-spacing: 15px;
-    margin: 35px;
 }
 
 #sub_main_box > #schedule_top_text h1 {
@@ -334,7 +333,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img1.jpg");
+        url("../schedul.img/movie_img1.jpg");
 
     background-size: cover;
 }
@@ -360,7 +359,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_image2.jpg");
+        url("../schedul.img/movie_image2.jpg");
 
     background-size: cover;
 }
@@ -386,7 +385,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_image3.jpg");
+        url("../schedul.img/movie_image3.jpg");
 
     background-size: cover;
 }
@@ -412,7 +411,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_image4.jpg");
+        url("../schedul.img/movie_image4.jpg");
 
     background-size: cover;
 }
@@ -438,7 +437,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_image5.jpg");
+        url("../schedul.img/movie_image5.jpg");
 
     background-size: cover;
 }
@@ -464,7 +463,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_image6.jpg");
+        url("../schedul.img/movie_image6.jpg");
 
     background-size: cover;
 }
@@ -490,7 +489,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img7.jpg");
+        url("../schedul.img/movie_img7.jpg");
 
     background-size: cover;
 }
@@ -516,7 +515,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img8.jpg");
+        url("../schedul.img/movie_img8.jpg");
 
     background-size: cover;
 }
@@ -542,7 +541,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img9.jpg");
+        url("../schedul.img/movie_img9.jpg");
 
     background-size: cover;
 }
@@ -568,7 +567,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img10.jpg");
+        url("../schedul.img/movie_img10.jpg");
 
     background-size: cover;
 }
@@ -594,7 +593,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img11.jpg");
+        url("../schedul.img/movie_img11.jpg");
 
     background-size: cover;
 }
@@ -620,7 +619,7 @@ header nav ul a li:hover{
         rgba(0, 0, 0, 0.4) 70%,
         rgba(0, 0, 0, 0.7) 80%,
         rgb(0, 0, 0, 1) 100%),
-        url("../img/movie_img12.jpg");
+        url("../schedul.img/movie_img12.jpg");
 
     background-size: cover;
 }
