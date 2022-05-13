@@ -15,10 +15,10 @@ function moveSlide0(num0) {
 }
 
 next0.addEventListener('click', function () {
-    if (currentIdx0 !==0) moveSlide0(currentIdx0 - 1);
+    if (currentIdx0 !== 0) moveSlide0(currentIdx0 - 1);
 });
 
-prev0.addEventListener('click', function() {
+prev0.addEventListener('click', function () {
     if (currentIdx0 !== slideCount0 - 1) {
         moveSlide0(currentIdx0 + 1);
     }

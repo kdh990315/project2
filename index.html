@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST WATCH</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/index_animation.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/rolling_banner.js"></script>
+    <script src="js/fullpage.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="wrap_af"></div>
+
+        <!-- 페이지 슬라이드 버튼 -->
+        <div id="dot">
+            <ul>
+                <li><a href="#p0"></a></li>
+                <li><a href="#p1"></a></li>
+                <li><a href="#p2"></a></li>
+                <li><a href="#p3"></a></li>
+                <li><a href="#p4"></a></li>
+            </ul>
+        </div>
+
+        <!-- 페이지 작업 -->
+        <section class="page_wrap">
+            <div class="page p00 section" id="particles-js">
+                <div id="slider">
+                    <video src="img/media/bm_mhead.mp4" loop muted autoplay></video>
+                </div>
+                <header>
+                    <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="justwatch"></a></div>
+                    <nav>
+                        <ul>
+                            <li><a href="movies.html">영화</a></li>
+                            <li> <a href="schedule.html">스케쥴 </a> </li>
+                            <li> <a href="browse.html">브라우저</a></li>
+                        </ul>
+                    </nav>
+                    <div id="mainBtn">
+                        <button type="button" id="myBtn">로그인</button>
+                        <button onclick="location.href='ticket.html'" type="button" id="Btn">구독하기</button>
+                    </div>
+
+
+                </header>
+
+                <div id="main_login" class="modal">
+                    <div id="login-box" class="login-content">
+                        <span class="close">&times;</span>
+
+                        <form>
+                            <h2>로그인</h2>
+
+
+                            <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
+
+                            <input type="password" id="pw" placeholder="비밀번호">
+
+                            <button type="button" id="loginbutton">로그인</button>
+
+                            <input type="checkbox" class="checkbox" checked>
+                            <label class="login_info">로그인 정보저장</label>
+
+                            <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                            <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a
+                                        href="">지금가입하세요.</a></b></p>
+
+
+                        </form>
+                    </div>
+                </div>
+
+                <a href="ticket.html">
+                    <div id="page1_text">
+                        SPECIAL OFFERS<br>
+                        1MONTHS 9,000원<br>
+                    </div>
+                </a>
+
+                <a href="ticket.html">
+                    <div id="box_triangle"></div>
+                </a>
+            </div>
+
+            <div class="page p01 section" id="p1">
+                <div id="page2_textline">
+                    <h1 class="p2_ani">HIT&nbsp; MOVIES</h1>
+                    <h3 class="p2_ani">BLOCKBUSTERS FOR THE WHOLE FAMILY</h3>
+                </div>
+                <div id="page2_imgline">
+                    <div class="rolling_banner">
+                        <div class="rolling_boxa rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_a.jpg"
+                                    alt="rolling_a"></a>
+                        </div>
+
+                        <div class="rolling_boxb rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_b.jpg"
+                                    alt="rolling_b"></a>
+                        </div>
+
+                        <div class="rolling_boxc rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_c.jpg"
+                                    alt="rolling_C"></a>
+                        </div>
+
+                        <div class="rolling_boxd rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_d.jpg"
+                                    alt="rolling_d"></a>
+                        </div>
+
+                        <div class="rolling_boxe rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_e.jpg"
+                                    alt="rolling_e"></a>
+                        </div>
+
+                        <div class="rolling_boxf rb">
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_f.jpg"
+                                    alt="rolling_f"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="page p02 section" id="p2">
+                <div class="p2box">
+                    <div class="page2_sec1">
+                        <div class="p2s_img1"><img src="img/index/moviea.jpg" alt="moviea"></div>
+                        <div class="p2s_img2"><img src="img/index/movieb.jpg" alt="movieb"></div>
+                    </div>
+                    <div class="page2_sec2">
+                        <div class="ps2_txt">
+                            <h1 class="p3_ani">COMMING SOON</h1>
+                            <h3 class="p3_ani"># <span>인질</span>&nbsp;&nbsp;&nbsp; # 5월&nbsp;&nbsp;&nbsp; # 대개봉</h3>
+                        </div>
+                    </div>
+                    <div class="page2_sec3">
+                        <div class="p2s_img3"><img src="img/index/moviec.jpg" alt="moviec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page p03 section" id="p3">
+                <div class="p3box">
+                    <div class="page3_sec1">
+                        <div class="p3s_img1">
+                            <img src="img/index/imovie_ap.jpg" alt="movie_poster">
+                        </div>
+                        <div class="p3s_img2">
+                            <img src="img/index/imovie_as.jpg" alt="movie_stealcut">
+                        </div>
+
+                    </div>
+                    <div class="page3_sec2">
+                        <div class="ps3_txt">
+                            <h1 class="p4_ani">INDEPENDENT FILM</h1>
+                            <h3 class="p4_ani"># 독립영화&nbsp;&nbsp;&nbsp; # <span>PICK👆</span> </h3>
+                        </div>
+                    </div>
+
+                    <div class="page3_sec3">
+                        <div class="p3s_img3">
+                            <img src="img/index/imovie_bs.jpg" alt="movie_stealcut">
+                        </div>
+                        <img src="img/index/imovie_bp.jpg" alt="movie_poster" id="p3s_img4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="pf_bot page section" id="p4">
+
+                <div class="lp_content">
+
+                    <div class="ip_content_back">
+                        <img src="img/index/main_4_back.jpg" alt="a">
+
+                    </div>
+                    <div class="ip_content_light">
+                        <a href="#"><img src="img/index/main_4_light.png" alt="a"></a>
+                    </div>
+
+                    <div class="ip_content_on">
+                        <a href="#                         "><img src="img/index/main_4_on.png" alt="a"></a>
+                        <p>저스트왓치에서 언제 어디서나 최고의 화질로 감상하세요. </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

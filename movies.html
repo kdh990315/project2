@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/common.css">
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/movies.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="google"></a></div>
+        <nav>
+            <ul>
+
+
+                <li><a href="movies.html">영화</a></li>
+
+
+
+                <li> <a href="schedule.html">스케쥴 </a> </li>
+
+
+                <li> <a href="browse.html">브라우저</a></li>
+
+            </ul>
+        </nav>
+        <div id="mainBtn">
+            <button type="button" id="myBtn">로그인</button>
+            <button onclick="location.href='ticket.html'" type="button" id="Btn">구독하기</button>
+        </div>
+
+
+    </header>
+
+    <div id="main_login" class="modal">
+        <div id="login-box" class="login-content">
+            <span class="close">&times;</span>
+
+            <form>
+                <h2>로그인</h2>
+
+
+                <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
+
+                <input type="password" id="pw" placeholder="비밀번호">
+
+                <button type="button" id="loginbutton">로그인</button>
+
+                <input type="checkbox" class="checkbox" checked>
+                <label class="login_info">로그인 정보저장</label>
+
+                <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
+
+
+            </form>
+
+        </div>
+    </div>
+
+    <section>
+        <img src="img/movies/header.jpg" alt="영화모음">
+        <div class="text">
+            <h2>수천 건의 히트작과 함께하세요.</h2>
+            <p>6개월 동안 특별한 제안으로 좋아하는 시리즈와 영화를 감상하세요.</p>
+        </div>
+        <a href="ticket.html" class="login">구독권 구매하기</a>
+    </section>
+
+
+    <div id="movies">
+        <h2>한국 영화</h2>
+        <div class="drama">
+            <div>드라마 장르</div>
+            <div><a href="">All view</a></div>
+        </div>
+
+        <div class="movieslist">
+
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/litle.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>리틀포레스트</h3>
+                <p>2018 | February | 28th</p>
+
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/gi.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>기적</h3>
+                <p>2021 | September | 15th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/bun.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>변호인</h3>
+                <p>2013 | December | 18th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/now.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>지금 만나러 갑니다</h3>
+                <p>2018 | march | 14th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/dong.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>동주</h3>
+                <p>2016 | February | 17th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/who.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>후궁</h3>
+                <p>2012 | june | 6th</p>
+            </div>
+
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/nig.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>낙원의 밤</h3>
+                <p>2021 | April | 9th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/chi.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>차이나 타운</h3>
+                <p>2015 | April | 29th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/ber.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>벌새</h3>
+                <p>2019 | August | 29th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/se.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>7번 방의 선물</h3>
+                <p>2013 | January | 3th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/will.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>당신, 거기 있어줄래요</h3>
+                <p>2016 | December | 14th</p>
+            </div>
+            <div class="movbox">
+                <div class="moviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/sa.jpg" alt="영화">
+                        <p class="more">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>상류사회</h3>
+                <p>2018 | August | 29th</p>
+
+            </div>
+
+        </div>
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+
+
+    </div>
+
+    <div id="thmovies">
+        <div class="thriller">
+            <div>스릴러 영화</div>
+            <div><a href="">All view</a></div>
+        </div>
+
+        <div class="thmovieslist">
+
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/dev.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>악마를 보았다</h3>
+                <p>2010 | August | 12th</p>
+
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/hide.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>숨바꼭질</h3>
+                <p>2013 | August | 14th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/reme.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>기억의 밤</h3>
+                <p>2017 | November | 29th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/call.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>콜</h3>
+                <p>2011 | November | 27th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/chu.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>추격자</h3>
+                <p>2008 | February | 14th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/inside.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>내부자들</h3>
+                <p>2018 | November | 19th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/black.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>검은 사제들</h3>
+                <p>2020 | November | 2th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/savaha.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>사바하</h3>
+                <p>2019 | February | 20th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/dark.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>암수살인</h3>
+                <p>2018 | October | 3th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/mimic.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>장산범</h3>
+                <p>2017 | August | 17th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/celeb.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>인질</h3>
+                <p>2021 | August | 18th</p>
+            </div>
+            <div class="thmovbox">
+                <div class="thmoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/end.jpg" alt="영화">
+                        <p class="thmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>끝까지 간다</h3>
+                <p>2014 | May | 19th</p>
+            </div>
+        </div>
+        <span class="thprev">&lt;</span>
+        <span class="thnext">&gt;</span>
+    </div>
+
+    <div id="usamovies">
+        <h2>외국 영화</h2>
+        <div class="best">
+            <div>인기 콘텐츠</div>
+            <div><a href="">All view</a></div>
+        </div>
+
+        <div class="usamovieslist">
+
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/venom.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>베놈2</h3>
+                <p>2021 | October | 13th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/note.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>노트북</h3>
+                <p>2004 | November | 26th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/fl.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>플립</h3>
+                <p>2017 | July | 12th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/intern.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>인턴</h3>
+                <p>2015 | September | 24th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/time.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>인타임</h3>
+                <p>2011 | October | 27th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/qu.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>콰이어트 플레이스2</h3>
+                <p>2021 | June | 16th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/men.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>맨인 더 다크2</h3>
+                <p>2021 | September | 1th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/Jane.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>제인도</h3>
+                <p>2017 | August | 23th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/orp.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>오펀 천사의 비밀</h3>
+                <p>2009 | August | 20th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/tw.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>트와일라잇</h3>
+                <p>2008 | December | 10th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/sh.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>쇼생크 탈출</h3>
+                <p>1995 | January | 12th</p>
+            </div>
+            <div class="usamovbox">
+                <div class="usamoviesbox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/see.jpg" alt="영화">
+                        <p class="usamore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>나우 유 씨 미 2</h3>
+                <p>2016 | July | 13th</p>
+            </div>
+        </div>
+        <span class="usaprev">&lt;</span>
+        <span class="usanext">&gt;</span>
+    </div>
+
+
+    <div id="newusa">
+        <div class="new">
+            <div>새로 올라온 콘텐츠</div>
+            <div><a href="">All view</a></div>
+        </div>
+
+        <div class="newlist">
+
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/story.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>신데렐라 스토리</h3>
+                <p>2004 | April | 20th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/hall.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>할로윈킬즈</h3>
+                <p>2021 | October | 27th</p>
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/meb.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>미비포유</h3>
+                <p>2016 | june | 1th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/venom.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>베놈2</h3>
+                <p>2021 | October | 13th</p>
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/key.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>스켈리톤 키</h3>
+                <p>2005 | August | 25th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/de.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>죽어야 사는 여자</h3>
+                <p>1992 | November | 28th</p>
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/see.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>나우 유 씨 미 2</h3>
+                <p>2016 | July | 13th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/star.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>스타 이즈 본</h3>
+                <p>2018 | October | 9th</p>
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/intern.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>인턴</h3>
+                <p>2015 | September | 24th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/note.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>노트북</h3>
+                <p>2004 | November | 26th</p>
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/time.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>인타임</h3>
+                <p>2011 | October | 27th</p>
+
+            </div>
+            <div class="newbox">
+                <div class="newusabox">
+                    <a href="schedul_sub.html">
+                        <img src="img/movies/qu.jpg" alt="영화">
+                        <p class="newmore">MORE INFO</p>
+                    </a>
+                </div>
+                <h3>콰이어트 플레이스2</h3>
+                <p>2021 | June | 16th</p>
+            </div>
+        </div>
+        <span class="newprev">&lt;</span>
+        <span class="newnext">&gt;</span>
+    </div>
+
+    <footer>
+        <div id="ft_box">
+            <div class="ft1">
+                <div class="ft1_b1">
+                    <div class="ft1_b1_1">
+                        공지사항
+                    </div>
+                    <div class="ft1_b1_2">
+                        <p>[안드로이드 app] 구글플레이결제 적용 안내(2022.5.7 업데이트)</p>
+                        <p>JUST WATCH 시리즈물 시청 안내</p>
+                        <p>[업데이트] 5월 1주 프로그램 리스트</p>
+                    </div>
+                    <div class="ft1_b1_3">
+                        <div class="ft1b13_1">&lt;</div>
+                        <div class="ft1b13_2">&gt;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft2">
+                <div class="ft2_t1">
+                    <ul class="ft_li_1">
+                        <li>회사소개</li>
+                        <li>인재채용</li>
+                        <li>서비스 소개</li>
+                        <li>이용약관</li>
+                        <li><span class="ft_bold">개인정보 처리방침</span></li>
+                        <li>고객센터</li>
+                    </ul>
+                    <ul class="ft_li_2">
+                        <li>JUST WATCH 주식회사</li>
+                        <li>|</li>
+                        <li>대표이사 JUST</li>
+                        <li>|</li>
+                        <li>고객센터 1234-5678(평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</li>
+                    </ul>
+                    <ul class="ft_li_3">
+                        <li>사업자 등록 번호: 220-88-365</li>
+                        <li>호스팅 서비스 제공자: 라인hub</li>
+                    </ul>
+                    <ul class="ft_li_4">
+                        <li>경기도 안산시 단원구 코스모스프라자 6층</li>
+                        <li>|</li>
+                        <li>전자우편주소: justwatch@line.com</li>
+                    </ul>
+                    <ul class="ft_li_5">
+                        <li>이 페이지는 상업적으로 사용하지 않는 포트폴리오 입니다.</li>
+                    </ul>
+                </div>
+                <div class="ft2_t2">
+                    <div class="ft2_t2_b">
+                        <img src="img/common/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

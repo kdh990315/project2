@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST WATCH</title>
+    <link rel="stylesheet" href="css/browse.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/slidebox.js"></script>
+    <!--slide_box-->
+
+
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="google"></a></div>
+        <nav>
+            <ul>
+
+
+                <li><a href="movies.html">영화</a></li>
+
+
+
+                <li> <a href="schedule.html">스케쥴 </a> </li>
+
+
+                <li> <a href="#">브라우저</a></li>
+
+            </ul>
+        </nav>
+        <div id="mainBtn">
+            <button type="button" id="myBtn">로그인</button>
+            <button onclick="location.href='ticket.html'" type="button" id="Btn">구독하기</button>
+        </div>
+
+
+    </header>
+    <div id="main_login" class="modal">
+        <div id="login-box" class="login-content">
+            <span class="close">&times;</span>
+
+            <form>
+                <h2>로그인</h2>
+
+
+                <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
+
+                <input type="password" id="pw" placeholder="비밀번호">
+
+                <button type="button" id="loginbutton">로그인</button>
+
+                <input type="checkbox" class="checkbox" checked>
+                <label class="login_info">로그인 정보저장</label>
+
+                <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
+
+
+            </form>
+
+        </div>
+    </div>
+    <div id="main_browse">
+
+        <div id="search_box">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search_font" placeholder="제목,감독,배우로 검색" name="search">
+                </form>
+            </div>
+        </div>
+
+        <div id="Browse_slide_imgbox">
+            <h4>오리지널 & 익스클루시브</h4>
+            <div id="slide_imgbox" class="slide">
+                <div class="slide_boximg" id="slide_img1">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image1.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+
+                </div>
+                <div class="slide_boximg" id="slide_img2">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image2.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg" id="slide_img3">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image3.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg" id="slide_img4">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image4.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg" id="slide_img5">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image5.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+
+
+
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image6.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image7.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image8.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image9.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image10.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+
+
+
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image1.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image2.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image3.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image4.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+                <div class="slide_boximg">
+                    <a href="schedul_sub.html"> <img src="img/slide_box/movie_image5.jpg" alt="a"></a>
+                    <button type="button"> 지금 바로 재생 </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="Browse_hashtags_box">
+            <h4>장르</h4>
+            <div id="hashtags_box">
+                <div class="hashtags_box1">
+                    <a href="movies.html">
+                        <h3>새로 올라온 작품</h3><img src="img/hashtags_box/new.jpg" alt="">
+                    </a>
+                </div>
+                <div class="hashtags_box2"><a href="movies.html">
+                        <h3>BEST Pick!</h3><img class="img" src="img/hashtags_box/newup.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box3"><a href="movies.html">
+                        <h3>공개 예정인 작품</h3><img src="img/hashtags_box/soon.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box4"> <a href="movies.html">
+                        <h3>독립영화</h3><img src="img/hashtags_box/independent.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box5"> <a href="movies.html">
+                        <h3>시대극</h3><img src="img/hashtags_box//historical.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box6"><a href="movies.html">
+                        <h3>음악</h3><img src="img/hashtags_box/music.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box7"> <a href="movies.html">
+                        <h3>액션</h3><img src="img/hashtags_box/action.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box8"> <a href="movies.html">
+                        <h3>공포</h3><img src="img/hashtags_box/horror.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box9"> <a href="movies.html">
+                        <h3>로맨스</h3><img src="img/hashtags_box/romance.jpg" alt="a">
+                    </a></div>
+                <div class="hashtags_box10"> <a href="movies.html">
+                        <h3>판타지</h3><img src="img/hashtags_box/fantasy.jpg" alt="a">
+                    </a></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div id="ft_box">
+            <div class="ft1">
+                <div class="ft1_b1">
+                    <div class="ft1_b1_1">
+                        공지사항
+                    </div>
+                    <div class="ft1_b1_2">
+                        <p>[안드로이드 app] 구글플레이결제 적용 안내(2022.5.7 업데이트)</p>
+                        <p>JUST WATCH 시리즈물 시청 안내</p>
+                        <p>[업데이트] 5월 1주 프로그램 리스트</p>
+                    </div>
+                    <div class="ft1_b1_3">
+                        <div class="ft1b13_1">&lt;</div>
+                        <div class="ft1b13_2">&gt;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft2">
+                <div class="ft2_t1">
+                    <ul class="ft_li_1">
+                        <li>회사소개</li>
+                        <li>인재채용</li>
+                        <li>서비스 소개</li>
+                        <li>이용약관</li>
+                        <li><span class="ft_bold">개인정보 처리방침</span></li>
+                        <li>고객센터</li>
+                    </ul>
+                    <ul class="ft_li_2">
+                        <li>JUST WATCH 주식회사</li>
+                        <li>|</li>
+                        <li>대표이사 JUST</li>
+                        <li>|</li>
+                        <li>고객센터 1234-5678(평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</li>
+                    </ul>
+                    <ul class="ft_li_3">
+                        <li>사업자 등록 번호: 220-88-365</li>
+                        <li>호스팅 서비스 제공자: 라인hub</li>
+                    </ul>
+                    <ul class="ft_li_4">
+                        <li>경기도 안산시 단원구 코스모스프라자 6층</li>
+                        <li>|</li>
+                        <li>전자우편주소: justwatch@line.com</li>
+                    </ul>
+                    <ul class="ft_li_5">
+                        <li>이 페이지는 상업적으로 사용하지 않는 포트폴리오 입니다.</li>
+                    </ul>
+                </div>
+                <div class="ft2_t2">
+                    <div class="ft2_t2_b">
+                        <img src="img/common/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

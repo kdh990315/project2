@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p,
+h2,
+h3,
+h4,
+ul,
+li,
+a {
+    font-family: 'MinSans-Light';
+    color: white;
+}
+
+body {
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* 이용권 텍스트 박스 */
+.textbox {
+    width: 100%;
+    height: 200px;
+    background-color: #252525;
+    margin-top: 100px;
+}
+
+.text {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text h2 {
+    padding: 50px 0 20px 0;
+}
+
+.text p {
+    color: rgb(180, 180, 180);
+}
+
+.text p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+section {
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+}
+
+section>h2 {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+section>p {
+    color: rgb(180, 180, 180);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ticket {
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.ticket>h2 {
+    color: white;
+    margin-top: 30px;
+}
+
+.ticket>p {
+    color: rgb(180, 180, 180);
+    margin-top: 10px;
+}
+
+/* Just Watch이용권 라디오 버튼 */
+.ticket ul {
+    width: 1200px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ticket ul li {
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+.ticket ul li,
+.ticket label {
+    cursor: pointer;
+}
+
+.ticket label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ticket input {
+    margin-left: 20px;
+}
+
+.ticket label span:nth-of-type(1) {
+    margin-left: -335px;
+    width: 70px;
+}
+
+.ticket label span:nth-of-type(2) {
+    color: rgb(180, 180, 180);
+    width: 300px;
+}
+
+.ticket label span:nth-of-type(3) {
+    margin-right: 20px;
+    width: 70px;
+}
+
+.ticket span {
+    display: inline-block;
+    width: 70px;
+}
+
+.active {
+    border: 2px rgb(255, 194, 25) solid;
+    border-radius: 15px;
+}
+
+/* 제휴 이용권 라디오 버튼 */
+
+.alliance {
+    width: 100%;
+    height: 600px;
+}
+
+.alliance>h2 {
+    color: white;
+    margin-top: 10px;
+}
+
+.alliance>p {
+    color: rgb(165, 165, 165);
+    margin-top: 10px;
+}
+
+.alliance ul {
+    width: 1200px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alliance ul li {
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+.alliance ul li,
+.alliance label {
+    cursor: pointer;
+}
+
+.alliance label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alliance input {
+    margin-left: 20px;
+}
+
+.alliance label span:nth-of-type(1) {
+    margin-left: -245px;
+    width: 200px;
+}
+
+.alliance label span:nth-of-type(2) {
+    color: rgb(180, 180, 180);
+    margin-left: -40px;
+    width: 395px;
+}
+
+.alliance label span:nth-of-type(3) {
+    margin-right: 20px;
+    width: 70px;
+}
+
+.alliance span {
+    display: inline-block;
+    width: 70px;
+}
+
+/* 주의사항 */
+#detail {
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+}
+
+#detail li,
+#detail h2 {
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+}
+
+#detail h2 {
+    margin: 40px 0 20px 0;
+}
+
+.purchase {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 0;
+}
+
+.Basic,
+.Standard,
+.Premium,
+.FLO,
+.Bugs,
+.KB {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Basic h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.money {
+    color: white;
+}
+
+.money span {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.money span:nth-of-type(2) {
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    background-color: rgb(255, 194, 25);
+}

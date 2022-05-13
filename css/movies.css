@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+h2,
+h3,
+p,
+a {
+    font-family: 'MinSans-Light';
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+section .text {
+    position: absolute;
+    top: 37%;
+    left: 36.5%;
+    font-size: 20px;
+}
+
+.text p {
+    margin-top: 30px;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.login {
+    color: black;
+    padding: 20px;
+    transition: all linear 0.3s;
+    border: 0;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(185, 185, 185);
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 70%;
+    left: 42%;
+}
+
+.login:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* 한국 영화 드라마 장르 */
+#movies {
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#movies h2 {
+    font-size: 35px;
+    padding-left: 30px;
+}
+
+#movies h3 {
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+#movies h3:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+#movies .drama {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+#movies .drama>div {
+    font-size: 17px;
+    font-family: MinSans-Light;
+    margin: 5px;
+    color: white;
+    padding: 20px 15px 5px 10px;
+}
+
+.movieslist {
+    width: 200%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.movieslist>div {
+    width: 15%;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+}
+
+/* 슬라이드키 */
+#movies span {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    background-color: #888;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#movies span:hover {
+    cursor: pointer;
+}
+
+#movies .prev {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+#movies .next {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+/* 이미지 박스 */
+.moviesbox {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.moviesbox img {
+    width: 100%;
+    height: 100%;
+    transition: ease all 0.5s;
+}
+
+.moviesbox:hover img {
+    transform: scale(1.2);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.movbox .more {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+
+.movbox>p {
+    color: #888;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.moviesbox:hover .more {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    opacity: 1;
+}
+
+.moviesbox:hover .more:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+/* 스릴러 영화 */
+#thmovies {
+    width: 100%;
+    height: 325px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#thmovies h3 {
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+#thmovies h3:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+#thmovies .thriller {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+#thmovies .thriller>div {
+    font-size: 17px;
+    font-family: MinSans-Light;
+    margin: 5px;
+    color: white;
+    padding: 20px 15px 5px 10px;
+}
+
+.thmovieslist {
+    width: 200%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thmovieslist>div {
+    width: 15%;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+}
+
+/* 슬라이드키 */
+#thmovies span {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    background-color: #888;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#thmovies span:hover {
+    cursor: pointer;
+}
+
+#thmovies .thprev {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+#thmovies .thnext {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+/* 이미지 박스 */
+.thmoviesbox {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.thmoviesbox img {
+    width: 100%;
+    height: 100%;
+    transition: ease all 0.5s;
+}
+
+.thmoviesbox:hover img {
+    transform: scale(1.2);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.thmovbox .thmore {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+
+.thmovbox .thmore:hover {
+    cursor: pointer;
+}
+
+.thmovbox>p {
+    color: #888;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.thmoviesbox:hover .thmore {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    opacity: 1;
+}
+
+.thmoviesbox:hover .thmore:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+/* 외국 영화 인기 콘텐츠 */
+#usamovies {
+    width: 100%;
+    height: 415px;
+    padding-top: 40px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#usamovies h2 {
+    font-size: 35px;
+    padding-left: 30px;
+}
+
+#usamovies h3 {
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+#usamovies h3:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+#usamovies .best {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+#usamovies .best>div {
+    font-size: 17px;
+    font-family: MinSans-Light;
+    margin: 5px;
+    color: white;
+    padding: 20px 15px 5px 10px;
+}
+
+.usamovieslist {
+    width: 200%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.usamovieslist>div {
+    width: 15%;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+}
+
+/* 슬라이드키 */
+#usamovies span {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    background-color: #888;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#usamovies span:hover {
+    cursor: pointer;
+}
+
+#usamovies .usaprev {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+#usamovies .usanext {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+/* 이미지 박스 */
+.usamoviesbox {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.usamoviesbox img {
+    width: 100%;
+    height: 100%;
+    transition: ease all 0.5s;
+}
+
+.usamoviesbox:hover img {
+    transform: scale(1.2);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.usamovbox .usamore {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+
+.usamovbox .usamore:hover {
+    cursor: pointer;
+}
+
+.usamovbox>p {
+    color: #888;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.usamoviesbox:hover .usamore {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    opacity: 1;
+}
+
+.usamoviesbox:hover .usamore:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+/* 미국 새로운 영화 */
+#newusa {
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#newusa h3 {
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+#newusa h3:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.new {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.new>div {
+    font-size: 17px;
+    font-family: MinSans-Light;
+    margin: 5px;
+    color: white;
+    padding: 20px 15px 5px 10px;
+}
+
+.newlist {
+    width: 200%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newlist>div {
+    width: 15%;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+}
+
+/* 슬라이드키 */
+#newusa span {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    background-color: #888;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#newusa span:hover {
+    cursor: pointer;
+}
+
+.newprev {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+.newnext {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    width: 30px;
+    height: 53px;
+}
+
+/* 이미지 박스 */
+.newusabox {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.newbox img {
+    width: 100%;
+    height: 100%;
+    transition: ease all 0.5s;
+}
+
+.newbox:hover img {
+    transform: scale(1.2);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.newmore {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+
+.newmore:hover {
+    cursor: pointer;
+}
+
+.newbox>p {
+    color: #888;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.newusabox:hover .newmore {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    opacity: 1;
+}
+
+.newusabox:hover .newmore:hover {
+    color: #999;
+    cursor: pointer;
+}

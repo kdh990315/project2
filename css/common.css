@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MinSans-Light;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+header {
+    z-index: 400;
+    min-width: 100%;
+    height: 95px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-color: rgba(51, 51, 51, 0.7); */
+}
+
+header:hover {
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    color: black;
+}
+
+#logo {
+    width: 140px;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    width: 700px;
+    height: 30px;
+    margin: 35px 30px;
+    float: left;
+}
+
+header nav ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: MinSans-Light;
+    padding-bottom: 10px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 4px solid rgb(255, 194, 25);
+}
+
+#mainBtn {
+    width: 100%;
+    padding: 30px 0 0 1500px;
+
+}
+
+#myBtn {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 400;
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+}
+
+#Btn {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 5px solid rgb(255, 194, 25);
+    z-index: 400;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: white;
+}
+
+#Btn:hover {
+    opacity: 0.8;
+}
+
+#myBtn:hover {
+    opacity: 0.8;
+}
+
+/* login popup */
+
+.modal {
+    margin: 100px auto;
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 0.6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main_login {
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    border: 2px solid rgb(230, 230, 230);
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+#login-box h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+
+
+#login-box #email,
+#pw {
+    display: flex;
+    margin: 20px;
+    margin: 20px auto;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input[type="email"] {
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    box-sizing: content-box;
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px;
+    caret-color: rgb(255, 194, 25);
+
+}
+
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    box-sizing: content-box;
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px;
+    caret-color: rgb(255, 194, 25);
+}
+
+#loginbutton {
+    width: 300px;
+    height: 20px;
+    margin: 10px 0px;
+    background-color: rgb(255, 194, 25);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.login_info {
+    font-size: 10px;
+    width: 230px;
+
+}
+
+#login-box .help {
+    font-size: 10px;
+    position: absolute;
+    margin: -15px 110px;
+    width: 200px;
+    text-align: right;
+}
+
+#login-box .no {
+    text-align: center;
+    font-size: 15px;
+    margin: 70px auto;
+}
+
+#login-box .go {
+    text-align: center;
+    font-size: 10px;
+    color: blue;
+}
+
+#login-box .point {
+    color: rgb(255, 194, 25);
+}
+
+#login-box a {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+}
+
+footer {
+    width: 100%;
+    height: 220px;
+}
+
+#ft_box {
+    width: 100%;
+    height: 180px;
+}
+
+.ft1 {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.ft1_b1 {
+    width: 1750px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.ft1_b1_1 {
+    color: white;
+    width: 100px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    font-family: MinSans-Light;
+}
+
+.ft1_b1_2 {
+    height: 100%;
+    width: 1000px;
+    float: left;
+    overflow: hidden;
+}
+
+.ft1_b1_2 p {
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    font-family: MinSans-Light;
+}
+
+.ft1_b1_3 {
+    width: 80px;
+    height: 100%;
+    float: right;
+    margin-right: 40px;
+    background-color: black;
+}
+
+.ft1b13_1 {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    float: left;
+}
+
+.ft1b13_2 {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    float: right;
+}
+
+.ft2 {
+    width: 100%;
+    height: 180px;
+}
+
+.ft2_t1 {
+    background-color: black;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.ft_li_1 {
+    background-color: black;
+    width: 100%;
+    height: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px 80px 25px 80px;
+}
+
+.ft_li_1 li {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 5px 30px 5px 10px;
+    font-family: MinSans-Light;
+}
+
+.ft_bold {
+    font-weight: bold;
+}
+
+.ft_li_2 {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px 80px 0 80px;
+}
+
+
+.ft_li_2 li {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 5px 5px 0 10px;
+    font-family: MinSans-Light;
+}
+
+.ft_li_3 {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 80px 0 80px;
+}
+
+
+.ft_li_3 li {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 0 5px 0 10px;
+    font-family: MinSans-Light;
+}
+
+.ft_li_4 {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 80px 0 80px;
+}
+
+
+.ft_li_4 li {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 0 5px 0 10px;
+    font-family: MinSans-Light;
+}
+
+.ft_li_5 {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 80px 0 80px;
+}
+
+
+.ft_li_5 li {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 0 5px 0 10px;
+    font-family: MinSans-Light;
+}
+
+.ft2_t2 {
+    background-color: black;
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+.ft2_t2_b {
+    background-color: rgb(0, 0, 0);
+    width: 290px;
+    height: 60px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: MinSans-Light;
+}
+
+.ft2_t2_b img {
+    margin: 20px;
+}

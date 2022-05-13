@@ -1,0 +1,744 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MinSans-Light;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* 서브 메인 시작 */
+#sub_main_box {
+    width: 100%;
+    height: 2200px;
+    margin-top: 90px;
+}
+
+/* schedule 상단 제목 */
+#sub_main_box>#schedule_top_text {
+    width: 100%;
+    height: 69px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 15px;
+    margin: 35px 0;
+}
+
+#sub_main_box>#schedule_top_text h1 {
+    font-size: 48px;
+    /* color: #fff; */
+}
+
+/* 메인 주차별 상영예정작 슬라이드 박스 */
+
+.slide_wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slides.animated {
+    transition: 0.5s ease-out;
+}
+
+.slides li {
+    width: 140px;
+    height: 50px;
+    float: left;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.slides li:hover div {
+    color: #fff;
+}
+
+.slides li:hover div:nth-of-type(1) {
+    font-size: 20px;
+}
+
+.slides li:hover div:nth-of-type(2) {
+    font-size: 14px;
+}
+
+.slides li:not(:last-child) {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.slides li .slides_MM {
+    font-size: 18px;
+    color: #909090;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slides li .slides_DD {
+    font-size: 12px;
+    color: #909090;
+    text-align: center;
+}
+
+.slides li .slides_color {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 194, 25);
+    margin: 0 auto;
+}
+
+#button_box {
+    width: 1143px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+
+#button_box .prev_next_box {
+    width: 72px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#button_box .prev_next_box span {
+    color: #fff;
+    user-select: none;
+}
+
+/* #button_box .controls{
+    text-align: center;
+    margin-top: 50px;
+} */
+
+#button_box .controls span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+
+}
+
+/* #sub_main_box > #schedule_date_box {
+    width: 1130px;
+    height: 72px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    margin-top: 30px;
+} */
+
+#schedul_total_box1 {
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#schedul_total_box2 {
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: none;
+}
+
+#schedul_total_box3 {
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: none;
+}
+
+#schedul_total_box4 {
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: none;
+}
+
+#schedul_total_box5 {
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: none;
+}
+
+/* 메인 장르 선택 목록ul박스 */
+.movie_type_box {
+    width: 906px;
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.movie_type_box .movie_type {
+    width: 300px;
+    height: 64px;
+    float: left;
+    text-align: center;
+    border: 1px solid #444;
+    letter-spacing: 5px;
+}
+
+.movie_type_box .movie_type:hover {
+    opacity: 0.7;
+}
+
+.movie_type_box .movie_type .movie_type1 {
+    margin-top: 3px;
+}
+
+.movie_type_box .movie_type .movie_type1 .movie_type_logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.movie_type_box .movie_type .movie_type2 {
+    margin-top: -8px;
+}
+
+.movie_type_box .movie_type .movie_type2 .movie_type_name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -30px;
+    color: #fff;
+}
+
+/* 메인 영화 콘텐츠 박스 */
+.schedule_main_contents_box1 {
+    width: 820px;
+    height: 252px;
+    margin: 0 auto;
+    /* border: 1px solid #333; */
+    margin-top: 60px;
+}
+
+.schedule_main_contents_name1 {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid #333; */
+}
+
+.contents_open_day {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.schedule_main_contents_box_parents {
+    width: 820px;
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #444;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/* 1번째 영화 이미지 */
+.schedule_main_img_box1 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img1.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box1 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box1:hover video {
+    display: block;
+}
+
+/* 2번째 영화 이미지 */
+.schedule_main_img_box2 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_image2.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box2 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box2:hover video {
+    display: block;
+}
+
+/* 3번째 영화 이미지 */
+.schedule_main_img_box3 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_image3.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box3 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box3:hover video {
+    display: block;
+}
+
+/* 4번째 영화 이미지 */
+.schedule_main_img_box4 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_image4.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box4 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box4:hover video {
+    display: block;
+}
+
+/* 5번째 영화 이미지 */
+.schedule_main_img_box5 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_image5.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box5 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box5:hover video {
+    display: block;
+}
+
+/* 6번째 영화 이미지 */
+.schedule_main_img_box6 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_image6.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box6 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box6:hover video {
+    display: block;
+}
+
+/* 7번째 영화 이미지 */
+.schedule_main_img_box7 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img7.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box7 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box7:hover video {
+    display: block;
+}
+
+/* 8번째 영화 이미지 */
+.schedule_main_img_box8 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img8.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box8 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box8:hover video {
+    display: block;
+}
+
+/* 9번째 영화 이미지 */
+.schedule_main_img_box9 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img9.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box9 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box9:hover video {
+    display: block;
+}
+
+/* 10번째 영화 이미지 */
+.schedule_main_img_box10 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img10.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box10 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box10:hover video {
+    display: block;
+}
+
+/* 11번째 영화 이미지 */
+.schedule_main_img_box11 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img11.jpg");
+
+    background-size: cover;
+}
+
+.schedule_main_img_box11 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box11:hover video {
+    display: block;
+}
+
+/* 12번째 영화 이미지 */
+.schedule_main_img_box12 {
+    width: 370px;
+    height: 203px;
+    /* border: 1px solid #333; */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
+        url("../img/schedule/movie_img12.jpg");
+
+    background-size: cover;
+}
+
+.play_icon {
+    width: 90px;
+    height: 29px;
+    letter-spacing: 2px;
+}
+
+.play_icon_box {
+    width: 120px;
+    height: 24px;
+    margin-top: -1px;
+}
+
+.play_icon_box span {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.play_icon_box2 {
+    width: 285px;
+    height: 24px;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.play_icon_box2 span {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+.schedule_main_img_box12 video {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.schedule_main_img_box12:hover video {
+    display: block;
+}
+
+.schedule_main_img_text {
+    width: 465px;
+    height: 203px;
+}
+
+.movie_name {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.movie_infor_box {
+    width: 443px;
+    height: 18px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+.movie_infor {
+    color: rgb(158, 158, 158);
+    font-size: 12px;
+}
+
+.movie_story_text_box {
+    width: 443px;
+    height: 100px;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 13px;
+}
+
+.movie_icon_box {
+    width: 443px;
+    height: 30px;
+    /* border: 1px solid #333; */
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 235px;
+    background-color: black;
+}
+
+#footer_box {
+    width: 100%;
+    height: 320px;
+    margin-top: 60px;
+}
+
+#footer_infor_box {
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#footer_infor_box ul {
+    color: #717171;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: wrap;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#footer_infor_box ul li {
+    float: left;
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: bold;
+    width: 133px;
+    height: 50px;
+}
+
+#footer_infor_box ul li:first-child {
+    font-size: 16px;
+}
+
+#footer_infor_box ul li:hover {
+    color: rgb(255, 194, 25);
+}
+
+#footer_infor_box span {
+    color: #717171;
+    line-height: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+
+footer>#footer_middle {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+/* footer bottom 박스 */
+footer>#footer_bottom_box {
+    width: 100%;
+    height: 14px;
+    /* border: 1px solid #333; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>#footer_bottom_box>.footer_bottom_ul>li {
+    float: right;
+    margin-right: 40px;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+footer>#footer_bottom_box>.footer_bottom_company {
+    font-size: 14px;
+    float: right;
+    margin-right: 15px;
+    color: #fff;
+}
